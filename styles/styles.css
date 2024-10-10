@@ -121,7 +121,7 @@ button {
 }
 .clientLogoSize {
     width: 7vw;
-    object-fit: fill;
+    object-fit: scale-down;
 }
 .pageImg {
     width: 40rem;
