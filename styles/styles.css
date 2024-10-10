@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--v-white);
 }
 li {
     list-style-type: none;
@@ -15,6 +16,10 @@ li {
 a {
     text-decoration: none;
     color: var(--v-gray);
+}
+a:hover {
+    cursor: pointer;
+    color: var(--v-black);
 }
 header {
     width: 100%;
@@ -67,6 +72,12 @@ nav {
     padding: 0.8rem 1.4rem;
     border-radius: 14px;
 }
+.registerButton:hover {
+    cursor: pointer;
+    border:1px solid var(--v-black);
+    background-color: var(--v-white);
+    color: var(--v-black);
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -103,6 +114,12 @@ button {
     color: var(--v-white);
     font-size: 1.2vw;
     font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--v-white);
+    border:1px solid var(--v-black);
+    color: var(--v-black);
 }
 .commercialText {
     color: var(--v-gray);
