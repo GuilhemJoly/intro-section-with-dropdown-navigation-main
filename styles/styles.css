@@ -67,6 +67,9 @@ nav {
   margin-right: 2.5rem;
   margin-top: 0;
 }
+.burgerImg {
+  display: none;
+}
 .registerButton {
   border: 1px solid var(--v-gray);
   padding: 0.8rem 1.4rem;
@@ -196,77 +199,102 @@ footer {
         justify-content: center;
         background-color: white;
     }
+    .firstPartNav {
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        position: absolute;
+        top: 5rem;
+        left: 0.2rem;
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+    }
+    .closeImgContainer {
+        display: flex;
+        justify-content: end;
+        width: 91%;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .closeImg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem;
+        z-index: 10;
+    }
+    .burgerImg {
+        display: inherit;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1.5rem 1.5rem 1rem 1rem;
+        z-index: 10;
+    }
+    .secondPartNav  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 1.3rem;
+        top: 20rem;
+        right: 0;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .registerButton {
+        width: 60%;
+        padding: 1.2rem 2.7rem;
+        text-align: center;
+        border-radius: 22px;
+        border: 3px solid var(--v-gray);
+    }
+    .container {
+        flex-direction: column-reverse;
+        background-color: bisque;
+        width: 100%;
+        height: 100%;
+    }
+    .card {
+        align-items: center;
+        width: 100%;
+    }
+    h1 {
+        flex-direction: row;
+    }
+    .makeWordSpace {
+        margin-right: 1.5vw;
+    }
     .hidden {
       display: none;
     }
+}
+@media (max-width:391px) {
+    .closeImg {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .burgerImg {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
     .firstPartNav {
-    flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-    position: absolute;
-    top: 5rem;
-    left: 0.2rem;
-    font-size: 1.3rem;
-    padding: 1rem 2rem;
-  }
-  .closeImgContainer {
-    display: flex;
-    justify-content: end;
-    width: 91%;
-    height: 5rem;
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  .closeImg {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1rem;
-    z-index: 10;
-  }
-  .burgerImg {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1.5rem 1.5rem 1rem 1rem;
-    z-index: 10;
-  }
-  .secondPartNav  {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    gap: 2rem;
-    top: 20rem;
-    right: 0;
-    height: fit-content;
-    width: 100%;
-    margin: 0;
-    padding: 1rem 0;
-    font-size: 1.3rem;
-  }
-  .registerButton {
-    width: 60%;
-    padding: 1.2rem 2.7rem;
-    text-align: center;
-    border-radius: 22px;
-    border: 3px solid var(--v-gray);
-  }
-  .container {
-    flex-direction: column-reverse;
-    background-color: bisque;
-    width: 100%;
-    height: 100%;
-  }
-  .card {
-    align-items: center;
-    width: 100%;
-  }
-  h1 {
-    flex-direction: row;
-  }
-  .makeWordSpace {
-    margin-right: 1.5vw;
-  }
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        top: 4rem;
+    }
+    .secondPartNav{
+        font-size: 0.9rem;
+        top: 16.5rem;
+    }
+    .registerButton {
+        padding: 0.8rem 1.4rem;
+        border-radius: 15px;
+        border: 2px solid var(--v-gray);
+    }
 }
