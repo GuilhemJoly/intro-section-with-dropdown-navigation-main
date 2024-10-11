@@ -67,6 +67,9 @@ nav {
     margin-right: 2.5rem;
     margin-top: 0;
 }
+.navArrow {
+    margin-left: 0.5rem;
+}
 .registerButton {
     border: 1px solid var(--v-gray);
     padding: 0.8rem 1.4rem;
