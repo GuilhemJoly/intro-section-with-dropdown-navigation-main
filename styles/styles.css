@@ -255,6 +255,7 @@ footer {
         border: 3px solid var(--v-gray);
     }
     .container {
+        margin-top: 3rem;
         flex-direction: column-reverse;
         width: 100%;
         height: 100%;
@@ -265,13 +266,54 @@ footer {
     }
     .card {
         align-items: center;
+        justify-content: center;
         width: 100%;
+        height: 80%;
+        padding: 0;
+        margin-top: 1rem;
     }
     h1 {
         flex-direction: row;
+        font-size: 9vw;
     }
     .makeWordSpace {
-        margin-right: 1.5vw;
+        margin-right: 1.7vw;
+    }
+    .commercialText {
+        text-align: center;
+        width: 90%;
+        height: 5.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    button {
+        width: 40%;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        border-radius: 15px;
+    }
+    .clientLogos {
+        width: 80%;
+        height: 9rem;
+        padding-bottom: 4rem;
+    }
+    .clientLogoSize {
+        width: 15vw;
+    }
+    footer {
+        margin-top: 4rem;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .attribution {
+        height: 3rem;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .hidden {
       display: none;
@@ -279,7 +321,7 @@ footer {
 }
 @media (max-width:391px) {
     body {
-        height: 48vh;
+        height: 88vh;
     }
     .closeImg {
         width: 1.8rem;
@@ -304,5 +346,17 @@ footer {
         border-radius: 15px;
         border: 2px solid var(--v-gray);
     }
-
+    .container {
+        height: 90%;
+        margin-top: 1rem;
+    }
+    .clientLogos {
+        width: 88%;
+    }
+    .clientLogoSize {
+        width: 17vw;
+    }
+    .attribution {
+        font-size: 0.5rem;
+    }
 }
