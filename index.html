@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -18,13 +17,18 @@
       rel="stylesheet"
     />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <header>
       <div class="logoSection">
         <img class="logo" src="./images/logo.svg" alt="logo" />
       </div>
-      <nav>
+      <img class="burgerImg" src="images/icon-menu.svg" alt="X" />
+      <nav class="fixed-nav hidden">
+        <div class="closeImgContainer">
+          <img class="closeImg" src="images/icon-close-menu.svg" alt="X" />
+        </div>
         <ul class="firstPartNav">
           <li><a href="#">Features</a></li>
           <li><a href="#">Company</a></li>
@@ -39,7 +43,7 @@
     </header>
     <div class="container">
       <div class="card">
-        <h1><span>Make</span><span>remote work</span></h1>
+        <h1><span class="makeWordSpace">Make</span><span>remote work</span></h1>
 
         <p class="commercialText">
           Get your team in sync, no matter your location. Streamline processes,
