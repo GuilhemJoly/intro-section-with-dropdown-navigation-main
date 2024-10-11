@@ -1,163 +1,166 @@
 body {
-    font-family: 'Epilogue', sans-serif;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    font-size: 1.3vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--v-white);
+  font-family: "Epilogue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-size: 1.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--v-white);
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 a {
-    text-decoration: none;
-    color: var(--v-gray);
+  text-decoration: none;
+  color: var(--v-gray);
 }
 a:hover {
-    cursor: pointer;
-    color: var(--v-black);
+  cursor: pointer;
+  color: var(--v-black);
 }
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .logoSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8%;
-    height: 5rem;
-    margin: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: 5rem;
+  margin: 0.5rem 0 0 0;
 }
 .logo {
-    width: 4.5rem;
-    height: 1.5rem;
-    margin: auto;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
+  width: 4.5rem;
+  height: 1.5rem;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 94%;
-    height: 5rem;
-    margin:0.5rem 0 0 0;
-    font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  height: 5rem;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
 }
 .firstPartNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25rem;
-    margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  margin-top: 0;
 }
 .secondPartNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 12rem;
-    height: 100%;
-    margin-right: 2.5rem;
-    margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  height: 100%;
+  margin-right: 2.5rem;
+  margin-top: 0;
 }
 .registerButton {
-    border: 1px solid var(--v-gray);
-    padding: 0.8rem 1.4rem;
-    border-radius: 14px;
+  border: 1px solid var(--v-gray);
+  padding: 0.8rem 1.4rem;
+  border-radius: 14px;
 }
 .registerButton:hover {
-    cursor: pointer;
-    border:1px solid var(--v-black);
-    background-color: var(--v-white);
-    color: var(--v-black);
+  cursor: pointer;
+  border: 1px solid var(--v-black);
+  background-color: var(--v-white);
+  color: var(--v-black);
+}
+.closeImgContainer {
+  display: none;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 91%;
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 91%;
+  margin-top: 1rem;
 }
 .card {
-    width: 40rem;
-    height: 92%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 8vw 0 0 4.5vw;  
-    margin-bottom: 2vw; 
+  width: 40rem;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 8vw 0 0 4.5vw;
+  margin-bottom: 2vw;
 }
 h1 {
-    font-size: 5.6vw;
-    color: var(--v-black);
-    display: flex;  
-    flex-direction: column;
-    line-height: 5.6vw;
+  font-size: 5.6vw;
+  color: var(--v-black);
+  display: flex;
+  flex-direction: column;
+  line-height: 5.6vw;
 }
 span {
-    margin:0;
+  margin: 0;
 }
 button {
-    border: none;
-    padding: 1.3vw 2.2vw;
-    border-radius: 1.2vw;
-    background-color: var(--v-black);
-    color: var(--v-white);
-    font-size: 1.2vw;
-    font-weight: bold;
+  border: none;
+  padding: 1.3vw 2.2vw;
+  border-radius: 1.2vw;
+  background-color: var(--v-black);
+  color: var(--v-white);
+  font-size: 1.2vw;
+  font-weight: bold;
 }
 button:hover {
-    cursor: pointer;
-    background-color: var(--v-white);
-    border:1px solid var(--v-black);
-    color: var(--v-black);
+  cursor: pointer;
+  background-color: var(--v-white);
+  border: 1px solid var(--v-black);
+  color: var(--v-black);
 }
 .commercialText {
-    color: var(--v-gray);
-    margin: 0;
-    margin-bottom: 3.2vw;
-    width: 77%;
-    line-height: 2vw;
+  color: var(--v-gray);
+  margin: 0;
+  margin-bottom: 3.2vw;
+  width: 77%;
+  line-height: 2vw;
 }
 .clientLogos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 35vw;
-    height: 13vw;
-    margin: 2vw 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35vw;
+  height: 13vw;
+  margin: 2vw 0 0 0;
 }
 .clientLogoSize {
-    width: 7vw;
-    object-fit: scale-down;
+  width: 7vw;
+  object-fit: scale-down;
 }
 .pageImg {
-    width: 40rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5vw;
+  width: 40rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vw;
 }
 .imgHero {
-    width: 35vw;
+  width: 35vw;
 }
 footer {
-    width: 100%;
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--v-black);
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--v-black);
 }
 .attribution {
   font-size: 1rem;
@@ -165,4 +168,87 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+  nav {
+    width: 5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+  }
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  .firstPartNav {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    position: absolute;
+    top: 5rem;
+    left: 0.2rem;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+  .closeImgContainer {
+    display: flex;
+    justify-content: end;
+    width: 91%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .closeImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+  .secondPartNav  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 2rem;
+    top: 20rem;
+    right: 0;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+  }
+  .registerButton {
+    width: 60%;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column-reverse;
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    align-items: center;
+    width: 100%;
+  }
+  h1 {
+    flex-direction: row;
+  }
+  .makeWordSpace {
+    margin-right: 1.5vw;
+  }
 }
