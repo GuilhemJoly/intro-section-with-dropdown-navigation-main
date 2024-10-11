@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8%;
+  width: 7rem;
   height: 5rem;
   margin: 0.5rem 0 0 0;
 }
@@ -170,6 +170,11 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 @media (max-width: 768px) {
+    .logo {
+        width: 6rem;
+        height: 2rem;
+        object-fit: fill;
+    }
     nav {
         width: 5rem;
         height: 100%;
