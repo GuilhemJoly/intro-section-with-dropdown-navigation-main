@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     closeFeatures.addEventListener('click', function(event) {
         if (window.innerWidth < 1025) {
             event.stopPropagation();
+            if (!companyNavDropdown.classList.contains('hiddenDropdown')) {
+                companyNavDropdown.classList.add('hiddenDropdown');
+                company.classList.remove('companyPadding');
+                secondPartNavigation.classList.remove('companySecondPartNavPadding');
+            }
         }
         featuresNavDropdown.classList.toggle('hiddenDropdown');
         features.classList.toggle('featuresPadding');
