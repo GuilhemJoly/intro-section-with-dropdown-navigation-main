@@ -68,7 +68,7 @@ nav {
   margin-right: 2.5rem;
   margin-top: 0;
 }
-.navDropdown {
+.featuresNavDropdown, .companyNavDropdown {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -204,6 +204,9 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.hiddenDropdown {
+    display: none;
 }
 @media (max-width: 1024px) {
   body {
