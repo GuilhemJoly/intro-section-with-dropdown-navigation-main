@@ -251,7 +251,12 @@ footer {
   }
   .featuresNavDropdown, .companyNavDropdown {
     box-shadow: none;
-    top: 2rem;
+    top: 3rem;
+    font-size: 1rem;
+  }
+  .dropdownIcons {
+    width: 1.3rem;
+    height: 1.3rem;
   }
   #featuresDropdown {
     left: 1.5rem;
@@ -405,6 +410,7 @@ footer {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    margin-top: 0;
   }
   .fixed-nav {
     position: fixed;
@@ -575,19 +581,25 @@ footer {
     font-size: 1rem;
     top: 4rem;
   }
+  .featuresPadding {
+    padding-bottom: 12rem;
+  }
+  .companyPadding {
+    padding-bottom: 8rem;
+  }
   #companyDropdown {
     left: 1.5rem;
-    top: 4.5rem;
+    top: 5rem;
   }
   .secondPartNav {
     font-size: 0.9rem;
     top: 16.5rem;
   }
   .featuresSecondPartNavPadding {
-    padding-top: 8.5rem;
+    padding-top: 12rem;
   }
   .companySecondPartNavPadding  {
-    padding-top: 7.5rem;
+    padding-top: 8rem;
   } 
   .registerButton {
     padding: 0.8rem 1.4rem;
