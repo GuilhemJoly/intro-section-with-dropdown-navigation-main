@@ -249,6 +249,16 @@ footer {
     font-size: 1.3rem;
     padding: 1rem 2rem;
   }
+  .featuresNavDropdown, .companyNavDropdown {
+    box-shadow: none;
+    top: 2rem;
+  }
+  #featuresDropdown {
+    left: 1.5rem;
+  }
+  .featuresPadding {
+    padding-bottom: 8.5rem;
+  }
   .closeImgContainer {
     display: flex;
     justify-content: end;

@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const closeFeatures = document.querySelector('.featuresDropdownMenu');
     const featuresNavDropdown = document.querySelector('.featuresNavDropdown');
+    const features = document.querySelector('.features');
 
     closeFeatures.addEventListener('click', function(event) {
         event.stopPropagation();
         featuresNavDropdown.classList.toggle('hiddenDropdown');
+        features.classList.toggle('featuresPadding');
     });
 
     const closeCompany = document.querySelector('.companyDropdownMenu');
