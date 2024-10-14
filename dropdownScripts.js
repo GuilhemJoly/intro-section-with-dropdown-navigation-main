@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeCompany = document.querySelector(".companyDropdownMenu");
   const companyNavDropdown = document.querySelector(".companyNavDropdown");
   const company = document.querySelector(".company");
-  const secondPartNavigation = document.querySelector(".secondPartNav");
 
   closeFeatures.addEventListener("click", function (event) {
     if (window.innerWidth < 1025) {
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!companyNavDropdown.classList.contains("hiddenDropdown")) {
         companyNavDropdown.classList.add("hiddenDropdown");
         company.classList.remove("companyPadding");
-        secondPartNavigation.classList.remove("companySecondPartNavPadding");
+        secondPartNav.classList.remove("companySecondPartNavPadding");
       }
     }
     featuresNavDropdown.classList.toggle("hiddenDropdown");
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     companyNavDropdown.classList.toggle("hiddenDropdown");
     company.classList.toggle("companyPadding");
-    secondPartNavigation.classList.toggle("companySecondPartNavPadding");
+    secondPartNav.classList.toggle("companySecondPartNavPadding");
   });
 
   document.addEventListener("click", function (event) {
