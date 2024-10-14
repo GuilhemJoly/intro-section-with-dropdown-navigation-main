@@ -5,18 +5,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const secondPartNav = document.querySelector('.secondPartNav');
 
     closeFeatures.addEventListener('click', function(event) {
-        event.stopPropagation();
+        if (window.innerWidth < 1025) {
+            event.stopPropagation();
+        }
         featuresNavDropdown.classList.toggle('hiddenDropdown');
         features.classList.toggle('featuresPadding');
-        secondPartNav.classList.toggle('secondPartNavPadding');
+        secondPartNav.classList.toggle('featuresSecondPartNavPadding');
     });
 
     const closeCompany = document.querySelector('.companyDropdownMenu');
     const companyNavDropdown = document.querySelector('.companyNavDropdown');
+    const company = document.querySelector('.company');
+    const secondPartNavigation = document.querySelector('.secondPartNav');
 
     closeCompany.addEventListener('click', function(event) {
+        if (window.innerWidth < 1025) {
         event.stopPropagation();
+        }
         companyNavDropdown.classList.toggle('hiddenDropdown');
+        company.classList.toggle('companyPadding');
+        secondPartNavigation.classList.toggle('companySecondPartNavPadding');
     });
 
     document.addEventListener('click', function() {
