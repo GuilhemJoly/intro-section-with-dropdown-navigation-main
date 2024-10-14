@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeFeatures = document.querySelector('.featuresDropdownMenu');
     const featuresNavDropdown = document.querySelector('.featuresNavDropdown');
     const features = document.querySelector('.features');
+    const secondPartNav = document.querySelector('.secondPartNav');
 
     closeFeatures.addEventListener('click', function(event) {
         event.stopPropagation();
         featuresNavDropdown.classList.toggle('hiddenDropdown');
         features.classList.toggle('featuresPadding');
+        secondPartNav.classList.toggle('secondPartNavPadding');
     });
 
     const closeCompany = document.querySelector('.companyDropdownMenu');

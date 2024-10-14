@@ -297,6 +297,9 @@ footer {
     padding: 1rem 0;
     font-size: 1.3rem;
   }
+  .secondPartNavPadding {
+    padding-bottom: 8.5rem;
+  }
   .registerButton {
     width: 60%;
     text-align: center;
@@ -453,6 +456,9 @@ footer {
     padding: 1rem 0;
     font-size: 1.2rem;
   }
+  .secondPartNavPadding {
+    padding-bottom: 8.5rem;
+  }
   .registerButton {
     width: 60%;
     text-align: center;
@@ -557,6 +563,9 @@ footer {
   .secondPartNav {
     font-size: 0.9rem;
     top: 16.5rem;
+  }
+  .secondPartNavPadding {
+    padding-top: 8.5rem;
   }
   .registerButton {
     padding: 0.8rem 1.4rem;
