@@ -68,11 +68,37 @@ nav {
   margin-right: 2.5rem;
   margin-top: 0;
 }
+.navDropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 0.9rem;
+  gap: 1rem;
+  top: 5rem;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 1px 1.7px 8.6px rgba(0, 0, 0, 0.028),
+    2.5px 4.1px 20.5px rgba(0, 0, 0, 0.04),
+    4.6px 7.6px 38.7px rgba(0, 0, 0, 0.05),
+    8.3px 13.6px 69px rgba(0, 0, 0, 0.06),
+    15.5px 25.5px 129.1px rgba(0, 0, 0, 0.072),
+    37px 61px 309px rgba(0, 0, 0, 0.1);
+}
+#featuresDropdown > div {
+    display: flex;
+    align-items: center;
+  }
+.dropdownIcons {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+    padding:0 0.9rem 0 0;
+}
 .burgerImg {
   display: none;
 }
 .navArrow {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 .registerButton {
   border: 1px solid var(--v-gray);
@@ -177,372 +203,372 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 @media (max-width: 1024px) {
-    body {
-        height: 110vh;
-        gap: 4vw;
-    }
-    .logo {
-        width: 6rem;
-        height: 2rem;
-        object-fit: fill;
-    }
-    nav {
-        width: 5rem;
-        height: 100%;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        width: 100%;
-        height: 10rem;
-        position: relative;
-    }
-    .fixed-nav {
-        position: fixed;
-        top: -0.5rem;
-        right: 0;
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-    }
-    .firstPartNav {
-        flex-direction: column;
-        align-items: start;
-        gap: 2rem;
-        position: absolute;
-        top: 5rem;
-        left: 0.2rem;
-        font-size: 1.3rem;
-        padding: 1rem 2rem;
-    }
-    .closeImgContainer {
-        display: flex;
-        justify-content: end;
-        width: 91%;
-        height: 5rem;
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    .closeImg {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin: 1rem;
-        z-index: 10;
-    }
-    .burgerImg {
-        display: inherit;
-        width: 2.5rem;
-        height: 1.4rem;
-        margin: 1.8rem 1.5rem 1rem 1rem;
-        z-index: 10;
-    }
-    .secondPartNav  {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        gap: 1.3rem;
-        top: 20rem;
-        right: 0;
-        height: fit-content;
-        width: 100%;
-        margin: 0;
-        padding: 1rem 0;
-        font-size: 1.3rem;
-    }
-    .registerButton {
-        width: 60%;
-        text-align: center;
-        padding: 0.8rem 1.4rem;
-        border-radius: 15px;
-        border: 2px solid var(--v-gray);
-    }
-    .container {
-        margin-top: 3rem;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 100%;
-    }
-    .pageImg {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-    }
-    .imgHero {
-        content: url('../images/image-hero-mobile.png');
-        width: 100vw;
-        height: 45vw;
-        object-fit: scale-down;
-    }
-    .card {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 80%;
-        padding: 0;
-        margin-top: 1rem;
-    }
-    h1 {
-        flex-direction: row;
-        font-size: 9vw;
-    }
-    .makeWordSpace {
-        margin-right: 1.7vw;
-    }
-    .commercialText {
-        text-align: center;
-        width: 90%;
-        height: fit;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    button {
-        width: 10rem;
-        padding: 1rem 1rem;
-        font-size: 1.2rem;
-        border-radius: 15px;
-    }
-    .clientLogos {
-        width: 80%;
-        height: 2rem;
-        margin-top: 3rem;
-        /* padding-bottom: 4rem; */
-    }
-    .clientLogoSize {
-        width: 15vw;
-    }
-    footer {
-        margin-top: 4rem;
-        width: 100%;
-        height: 10rem;
-        display: flex;
-        align-items: end;
-        justify-content: center;
-    }
-    .attribution {
-        height: 3rem;
-        font-size: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hidden {
-      display: none;
-    }
+  body {
+    height: 110vh;
+    gap: 4vw;
+  }
+  .logo {
+    width: 6rem;
+    height: 2rem;
+    object-fit: fill;
+  }
+  nav {
+    width: 5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+  }
+  .fixed-nav {
+    position: fixed;
+    top: -0.5rem;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  .firstPartNav {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    position: absolute;
+    top: 5rem;
+    left: 0.2rem;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+  .closeImgContainer {
+    display: flex;
+    justify-content: end;
+    width: 91%;
+    height: 5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .closeImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+    z-index: 10;
+  }
+  .burgerImg {
+    display: inherit;
+    width: 2.5rem;
+    height: 1.4rem;
+    margin: 1.8rem 1.5rem 1rem 1rem;
+    z-index: 10;
+  }
+  .secondPartNav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 1.3rem;
+    top: 20rem;
+    right: 0;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+  }
+  .registerButton {
+    width: 60%;
+    text-align: center;
+    padding: 0.8rem 1.4rem;
+    border-radius: 15px;
+    border: 2px solid var(--v-gray);
+  }
+  .container {
+    margin-top: 3rem;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+  .pageImg {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .imgHero {
+    content: url("../images/image-hero-mobile.png");
+    width: 100vw;
+    height: 45vw;
+    object-fit: scale-down;
+  }
+  .card {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  h1 {
+    flex-direction: row;
+    font-size: 9vw;
+  }
+  .makeWordSpace {
+    margin-right: 1.7vw;
+  }
+  .commercialText {
+    text-align: center;
+    width: 90%;
+    height: fit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    width: 10rem;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+  }
+  .clientLogos {
+    width: 80%;
+    height: 2rem;
+    margin-top: 3rem;
+    /* padding-bottom: 4rem; */
+  }
+  .clientLogoSize {
+    width: 15vw;
+  }
+  footer {
+    margin-top: 4rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .attribution {
+    height: 3rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
-    body {
-        height: auto;
-        gap: 2vw;
-    }
-    .logo {
-        width: 5rem;
-        height: 1.5rem;
-    }
-    nav {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-    }
-    .fixed-nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 70%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-    }
-    .firstPartNav {
-        flex-direction: column;
-        align-items: start;
-        gap: 1.5rem;
-        position: absolute;
-        top: 4rem;
-        left: 0.5rem;
-        font-size: 1.2rem;
-        padding: 1rem 1.5rem;
-    }
-    .closeImgContainer {
-        display: flex;
-        justify-content: end;
-        width: 90%;
-        height: 4rem;
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    .closeImg {
-        width: 2rem;
-        height: 2rem;
-        margin: 1rem;
-        z-index: 10;
-    }
-    .burgerImg {
-        display: inherit;
-        width: 2rem;
-        height: 1.2rem;
-        margin: 1.5rem 1.5rem 1rem 1rem;
-        z-index: 10;
-    }
-    .secondPartNav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        gap: 1rem;
-        top: 18rem;
-        right: 0;
-        height: fit-content;
-        width: 100%;
-        margin: 0;
-        padding: 1rem 0;
-        font-size: 1.2rem;
-    }
-    .registerButton {
-        width: 60%;
-        text-align: center;
-        padding: 0.8rem 1.4rem;
-        border-radius: 15px;
-        border: 2px solid var(--v-gray);
-    }
-    .container {
-        margin-top: 2rem;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: auto;
-    }
-    .pageImg {
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-    .imgHero {
-        content: url('../images/image-hero-mobile.png');
-        width: 100vw;
-        height: auto;
-        object-fit: cover;
-    }
-    .card {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin-top: 1rem;
-    }
-    h1 {
-        flex-direction: row;
-        font-size: 8vw;
-    }
-    .makeWordSpace {
-        margin-right: 1.5vw;
-    }
-    .commercialText {
-        text-align: center;
-        width: 90%;
-        height: fit;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    button {
-        width: 10rem;
-        padding: 1rem 1rem;
-        font-size: 1.2rem;
-        border-radius: 15px;
-    }
-    .clientLogos {
-        width: 80%;
-        height: 2rem;
-        margin-top: 3rem;
-    }
-    .clientLogoSize {
-        width: 15vw;
-    }
-    footer {
-        margin-top: 4rem;
-        width: 100%;
-        height: 10rem;
-        display: flex;
-        align-items: end;
-        justify-content: center;
-    }
-    .attribution {
-        height: 3rem;
-        font-size: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hidden {
-        display: none;
-    }
+  body {
+    height: auto;
+    gap: 2vw;
+  }
+  .logo {
+    width: 5rem;
+    height: 1.5rem;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  .firstPartNav {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  .closeImgContainer {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    height: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .closeImg {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    z-index: 10;
+  }
+  .burgerImg {
+    display: inherit;
+    width: 2rem;
+    height: 1.2rem;
+    margin: 1.5rem 1.5rem 1rem 1rem;
+    z-index: 10;
+  }
+  .secondPartNav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 1rem;
+    top: 18rem;
+    right: 0;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .registerButton {
+    width: 60%;
+    text-align: center;
+    padding: 0.8rem 1.4rem;
+    border-radius: 15px;
+    border: 2px solid var(--v-gray);
+  }
+  .container {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .pageImg {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .imgHero {
+    content: url("../images/image-hero-mobile.png");
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+  .card {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  h1 {
+    flex-direction: row;
+    font-size: 8vw;
+  }
+  .makeWordSpace {
+    margin-right: 1.5vw;
+  }
+  .commercialText {
+    text-align: center;
+    width: 90%;
+    height: fit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    width: 10rem;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+  }
+  .clientLogos {
+    width: 80%;
+    height: 2rem;
+    margin-top: 3rem;
+  }
+  .clientLogoSize {
+    width: 15vw;
+  }
+  footer {
+    margin-top: 4rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .attribution {
+    height: 3rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
 }
-@media (max-width:391px) {
-    body {
-        height: 84vh;
-    }
-    header {
-        height: 8rem;
-    }
-    .closeImg {
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-    .burgerImg {
-        width: 2.2rem;
-        height: 1.2rem;
-        margin-right: 1.1rem;
-    }
-    .firstPartNav {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-        top: 4rem;
-    }
-    .secondPartNav{
-        font-size: 0.9rem;
-        top: 16.5rem;
-    }
-    .registerButton {
-        padding: 0.8rem 1.4rem;
-        border-radius: 15px;
-        border: 2px solid var(--v-gray);
-    }
-    .container {
-        height: 100%;
-        margin-top: 0rem;
-    }
-    .imgHero {
-        width: 100vw;
-        height: 100%;
-        object-fit: cover;
-    }
-    button {
-        width: 36%;
-        padding: 4vw;
-        font-size: 4vw;
-        border-radius: 15px;
-    }
-    .clientLogos {
-        width: 88%;
-    }
-    .clientLogoSize {
-        width: 17vw;
-    }
-    .attribution {
-        font-size: 0.5rem;
-    }
+@media (max-width: 391px) {
+  body {
+    height: 84vh;
+  }
+  header {
+    height: 8rem;
+  }
+  .closeImg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .burgerImg {
+    width: 2.2rem;
+    height: 1.2rem;
+    margin-right: 1.1rem;
+  }
+  .firstPartNav {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    top: 4rem;
+  }
+  .secondPartNav {
+    font-size: 0.9rem;
+    top: 16.5rem;
+  }
+  .registerButton {
+    padding: 0.8rem 1.4rem;
+    border-radius: 15px;
+    border: 2px solid var(--v-gray);
+  }
+  .container {
+    height: 100%;
+    margin-top: 0rem;
+  }
+  .imgHero {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  button {
+    width: 36%;
+    padding: 4vw;
+    font-size: 4vw;
+    border-radius: 15px;
+  }
+  .clientLogos {
+    width: 88%;
+  }
+  .clientLogoSize {
+    width: 17vw;
+  }
+  .attribution {
+    font-size: 0.5rem;
+  }
 }
