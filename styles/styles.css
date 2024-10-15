@@ -400,7 +400,9 @@ footer {
     margin-top: 3rem;
   }
   .clientLogoSize {
-    width: 15vw;
+    width: 18vw;
+    height: 5vw;
+    object-fit: scale-down;
   }
   footer {
     margin-top: 4rem;
