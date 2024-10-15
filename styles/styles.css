@@ -615,6 +615,9 @@ footer {
     height: 1.2rem;
     margin-right: 1.1rem;
   }
+  .fixed-nav {
+    width: 64%;
+  }
   .firstPartNav {
     padding: 1rem 1.5rem;
     font-size: 1rem;
