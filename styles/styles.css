@@ -222,6 +222,9 @@ footer {
     height: 100%;
     z-index: 0;
   }
+  .noScroll {
+    overflow: hidden;
+  }
   .logo {
     width: 6rem;
     height: 2rem;
