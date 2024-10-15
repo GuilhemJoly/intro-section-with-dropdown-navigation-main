@@ -676,7 +676,9 @@ footer {
     width: 88%;
   }
   .clientLogoSize {
-    width: 17vw;
+    width: 18vw;
+    height: 5vw;
+    object-fit: scale-down;
   }
   .attribution {
     font-size: 0.5rem;
