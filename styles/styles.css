@@ -605,6 +605,7 @@ footer {
   }
   header {
     height: 8rem;
+    margin-bottom: 0;
   }
   h1 {
     font-size: 9.2vw;
