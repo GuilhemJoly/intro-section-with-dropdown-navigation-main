@@ -262,9 +262,13 @@ footer {
   #featuresDropdown {
     left: 1.5rem;
   }
+  .companyDropdownMenu {
+    z-index: 3;
+  }
   #companyDropdown {
     left: 1.5rem;
     top: 6rem;
+    z-index: 1;
   }
   .featuresPadding {
     padding-bottom: 12rem;
@@ -273,7 +277,7 @@ footer {
     padding-bottom: 8rem;
   }
   .moveCompanyToBottom {
-    padding-top: 13.5rem;
+    margin-top: 12rem;
   }
   .closeImgContainer {
     display: flex;
