@@ -8,50 +8,52 @@ document.addEventListener("DOMContentLoaded", function () {
   const companyNavDropdown = document.querySelector(".companyNavDropdown");
   const company = document.querySelector(".company");
 
+  const updatePadding = () => {
+    const featuresOpen = !featuresNavDropdown.classList.contains("hiddenDropdown");
+    const companyOpen = !companyNavDropdown.classList.contains("hiddenDropdown");
+
+    secondPartNav.classList.remove("featuresSecondPartNavPadding", "companySecondPartNavPadding", "featuresVsCompanyPadding");
+
+    if (featuresOpen && companyOpen) {
+      secondPartNav.classList.add("featuresVsCompanyPadding");
+      companyNavDropdown.classList.add("moveCompanyToBottom")
+    } else {
+      if (featuresOpen) {
+        secondPartNav.classList.add("featuresSecondPartNavPadding");
+        companyNavDropdown.classList.remove("moveCompanyToBottom")
+      }
+      if (companyOpen) {
+        secondPartNav.classList.add("companySecondPartNavPadding");
+        companyNavDropdown.classList.remove("moveCompanyToBottom")
+      }
+    }
+  };
+
   closeFeatures.addEventListener("click", function (event) {
     if (window.innerWidth < 1025) {
       event.stopPropagation();
-      if (!companyNavDropdown.classList.contains("hiddenDropdown")) {
-        companyNavDropdown.classList.add("hiddenDropdown");
-        company.classList.remove("companyPadding");
-        secondPartNav.classList.remove("companySecondPartNavPadding");
-      }
     }
     featuresNavDropdown.classList.toggle("hiddenDropdown");
     features.classList.toggle("featuresPadding");
-    secondPartNav.classList.toggle("featuresSecondPartNavPadding");
+    updatePadding();
   });
 
   closeCompany.addEventListener("click", function (event) {
     if (window.innerWidth < 1025) {
       event.stopPropagation();
-      if (!featuresNavDropdown.classList.contains("hiddenDropdown")) {
-        featuresNavDropdown.classList.add("hiddenDropdown");
-        features.classList.remove("featuresPadding");
-        secondPartNav.classList.remove("featuresSecondPartNavPadding");
-      }
     }
     companyNavDropdown.classList.toggle("hiddenDropdown");
     company.classList.toggle("companyPadding");
-    secondPartNav.classList.toggle("companySecondPartNavPadding");
+    updatePadding();
   });
 
-  document.addEventListener("click", function (event) {
-    if (!featuresNavDropdown.classList.contains("hiddenDropdown")) {
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1025) {
       featuresNavDropdown.classList.add("hiddenDropdown");
-      features.classList.remove("featuresPadding");
-      secondPartNav.classList.remove("featuresSecondPartNavPadding");
-    }
-    if (!companyNavDropdown.classList.contains("hiddenDropdown")) {
       companyNavDropdown.classList.add("hiddenDropdown");
+      features.classList.remove("featuresPadding");
       company.classList.remove("companyPadding");
-      secondPartNavigation.classList.remove("companySecondPartNavPadding");
+      secondPartNav.classList.remove("featuresSecondPartNavPadding", "companySecondPartNavPadding", "featuresVsCompanyPadding");
     }
-  });
-  featuresNavDropdown.addEventListener("click", function (event) {
-    event.stopPropagation();
-  });
-  companyNavDropdown.addEventListener("click", function (event) {
-    event.stopPropagation();
   });
 });
