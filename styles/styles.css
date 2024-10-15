@@ -499,6 +499,12 @@ footer {
   .companySecondPartNavPadding  {
     padding-top: 8rem;
   } 
+  .featuresVsCompanyPadding {
+    padding-top: 24rem;
+  }
+  .moveCompanyToBottom {
+    margin-top: 12rem;
+  }
   .registerButton {
     width: 60%;
     text-align: center;
@@ -623,6 +629,9 @@ footer {
   .companySecondPartNavPadding  {
     padding-top: 8rem;
   } 
+  .featuresVsCompanyPadding {
+    padding-top: 24rem;
+  }
   .registerButton {
     padding: 0.8rem 1.4rem;
     border-radius: 15px;
