@@ -225,6 +225,10 @@ footer {
   .noScroll {
     overflow: hidden;
   }
+  header {
+    height: 2rem;
+    margin-bottom: 0;
+  }
   .logo {
     width: 6rem;
     height: 2rem;
