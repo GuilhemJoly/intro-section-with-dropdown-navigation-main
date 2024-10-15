@@ -436,9 +436,13 @@ footer {
     height: 4rem;
     margin-bottom: 0;
   }
+  .logoSection{
+    margin-top: 0;
+  }
   .logo {
     width: 5rem;
-    height: 1.5rem;
+    height: 3.5rem;
+    object-fit: scale-down;
   }
   nav {
     width: 100%;
