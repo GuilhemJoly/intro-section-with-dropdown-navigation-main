@@ -674,6 +674,9 @@ footer {
     height: 100%;
     margin-top: 0rem;
   }
+  .commercialText  {
+    width: 90%
+  }
   .imgHero {
     width: 100vw;
     height: 100%;
