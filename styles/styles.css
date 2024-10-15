@@ -426,6 +426,10 @@ footer {
     height: auto;
     gap: 2vw;
   }
+  header {
+    height: 4rem;
+    margin-bottom: 0;
+  }
   .logo {
     width: 5rem;
     height: 1.5rem;
