@@ -606,6 +606,9 @@ footer {
   header {
     height: 8rem;
   }
+  h1 {
+    font-size: 9.2vw;
+  }
   .closeImg {
     width: 1.8rem;
     height: 1.8rem;
