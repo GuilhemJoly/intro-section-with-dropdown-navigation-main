@@ -625,8 +625,14 @@ footer {
     height: 84vh;
   }
   header {
-    height: 8rem;
-    margin-bottom: 0;
+    height: 6rem;
+    margin-bottom: 0.5rem;
+  }
+  .logoSection {
+    height: 1rem;
+  }
+  .logo {
+    padding:0.5rem 0;
   }
   h1 {
     font-size: 9.5vw;
