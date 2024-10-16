@@ -633,6 +633,8 @@ footer {
   }
   .logo {
     padding:0.5rem 0;
+    width: 6rem;
+    object-fit: scale-down;
   }
   h1 {
     font-size: 9.5vw;
