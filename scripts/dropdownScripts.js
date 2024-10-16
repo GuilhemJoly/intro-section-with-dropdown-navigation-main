@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeFeatures = document.querySelector(".featuresDropdownMenu");
   const featuresNavDropdown = document.querySelector(".featuresNavDropdown");
   const features = document.querySelector(".features");
+  const featuresArrow = document.querySelector(".features .navArrow");
+  const companyArrow = document.querySelector(".company .navArrow");
   const secondPartNav = document.querySelector(".secondPartNav");
 
   const closeCompany = document.querySelector(".companyDropdownMenu");
@@ -35,15 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     featuresNavDropdown.classList.toggle("hiddenDropdown");
     features.classList.toggle("featuresPadding");
+    featuresArrow.classList.toggle("arrowUp");
     updatePadding();
   });
-
+  
   closeCompany.addEventListener("click", function (event) {
     if (window.innerWidth < 1025) {
       event.stopPropagation();
     }
     companyNavDropdown.classList.toggle("hiddenDropdown");
     company.classList.toggle("companyPadding");
+    companyArrow.classList.toggle("arrowUp");
     updatePadding();
   });
 
@@ -54,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
       features.classList.remove("featuresPadding");
       company.classList.remove("companyPadding");
       secondPartNav.classList.remove("featuresSecondPartNavPadding", "companySecondPartNavPadding", "featuresVsCompanyPadding");
+      featuresArrow.classList.remove("arrowUp");
+      companyArrow.classList.remove("arrowUp");
     }
   });
 });
