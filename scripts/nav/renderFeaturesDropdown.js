@@ -1,4 +1,4 @@
-import { featuresDropdownMenuDatas } from "../datas/featuresDropdownMenuDatas.js";
+import { featuresDropdownMenuDatas } from "../../datas/featuresDropdownMenuDatas.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const featuresDropdownContainer = document.getElementById("featuresDropdown");

@@ -1,4 +1,4 @@
-import { companyDropdownMenuDatas } from "../datas/companyDropdownMenuDatas.js";
+import { companyDropdownMenuDatas } from "../../datas/companyDropdownMenuDatas.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const companyDropdownContainer = document.getElementById("companyDropdown");

@@ -1,4 +1,4 @@
-import { clientLogoDatas } from '../datas/clientLogoDatas.js';
+import { clientLogoDatas } from '../../datas/clientLogoDatas.js';
 
 export const renderClientLogos = (container) => {
   const clientLogosContainer = document.createElement('div');

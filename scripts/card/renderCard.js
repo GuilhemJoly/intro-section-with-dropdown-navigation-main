@@ -1,7 +1,7 @@
 import { renderTitle } from "./renderTitle.js";
 import { renderDescription } from "./renderDescription.js";
 import { renderLearnMoreButton } from "./renderLearnMoreButton.js";
-import { renderClientLogos } from "../renderClientLogos.js";
+import { renderClientLogos } from "./renderClientLogos.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const cardContainer = document.querySelector(".card");
