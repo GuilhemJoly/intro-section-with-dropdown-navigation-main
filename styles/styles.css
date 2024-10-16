@@ -553,6 +553,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 0;
+    margin-bottom: 1rem;
   }
   .imgHero {
     content: url("../images/image-hero-mobile.png");
@@ -581,7 +582,8 @@ footer {
     height: fit;
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.7rem;
   }
   button {
     width: 10rem;
@@ -592,7 +594,7 @@ footer {
   .clientLogos {
     width: 88%;
     height: 2rem;
-    margin-top: 3rem;
+    margin-top: 2.8rem;
   }
   .clientLogoSize {
     width: 18vw;
@@ -627,7 +629,7 @@ footer {
     margin-bottom: 0;
   }
   h1 {
-    font-size: 9.2vw;
+    font-size: 9.5vw;
   }
   .closeImg {
     width: 1.8rem;
@@ -692,11 +694,11 @@ footer {
   button {
     width: 37%;
     padding: 3.9vw 5vw;
-    font-size: 4.4vw;
+    font-size: 4.3vw;
     border-radius: 15px;
   }
   .clientLogos {
-    width: 100%;
+    width: 97%;
     height: 10vw;
   }
   .clientLogoSize {
