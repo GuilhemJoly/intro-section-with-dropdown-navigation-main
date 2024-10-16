@@ -1,3 +1,7 @@
+import { handleFeaturesClick } from './handleFeaturesClick.js';
+import { handleCompanyClick } from './handleCompanyClick.js';
+import { handleResize } from './handleResize.js';
+
 document.addEventListener("DOMContentLoaded", function () {
   const closeFeatures = document.querySelector(".featuresDropdownMenu");
   const featuresNavDropdown = document.querySelector(".featuresNavDropdown");
@@ -10,56 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const companyNavDropdown = document.querySelector(".companyNavDropdown");
   const company = document.querySelector(".company");
 
-  const updatePadding = () => {
-    const featuresOpen = !featuresNavDropdown.classList.contains("hiddenDropdown");
-    const companyOpen = !companyNavDropdown.classList.contains("hiddenDropdown");
-
-    secondPartNav.classList.remove("featuresSecondPartNavPadding", "companySecondPartNavPadding", "featuresVsCompanyPadding");
-
-    if (featuresOpen && companyOpen) {
-      secondPartNav.classList.add("featuresVsCompanyPadding");
-      companyNavDropdown.classList.add("moveCompanyToBottom")
-    } else {
-      if (featuresOpen) {
-        secondPartNav.classList.add("featuresSecondPartNavPadding");
-        companyNavDropdown.classList.remove("moveCompanyToBottom")
-      }
-      if (companyOpen) {
-        secondPartNav.classList.add("companySecondPartNavPadding");
-        companyNavDropdown.classList.remove("moveCompanyToBottom")
-      }
-    }
-  };
+  if (!closeFeatures || !featuresNavDropdown || !features || !featuresArrow || !companyArrow || !secondPartNav || !closeCompany || !companyNavDropdown || !company) {
+    console.error('One or more elements are undefined:', { closeFeatures, featuresNavDropdown, features, featuresArrow, companyArrow, secondPartNav, closeCompany, companyNavDropdown, company });
+    return;
+  }
 
   closeFeatures.addEventListener("click", function (event) {
-    if (window.innerWidth < 1025) {
-      event.stopPropagation();
-    }
-    featuresNavDropdown.classList.toggle("hiddenDropdown");
-    features.classList.toggle("featuresPadding");
-    featuresArrow.classList.toggle("arrowUp");
-    updatePadding();
+    handleFeaturesClick(event, featuresNavDropdown, features, featuresArrow, secondPartNav, companyNavDropdown);
   });
-  
+
   closeCompany.addEventListener("click", function (event) {
-    if (window.innerWidth < 1025) {
-      event.stopPropagation();
-    }
-    companyNavDropdown.classList.toggle("hiddenDropdown");
-    company.classList.toggle("companyPadding");
-    companyArrow.classList.toggle("arrowUp");
-    updatePadding();
+    handleCompanyClick(event, companyNavDropdown, company, companyArrow, secondPartNav, featuresNavDropdown);
   });
 
   window.addEventListener("resize", function () {
-    if (window.innerWidth >= 1025) {
-      featuresNavDropdown.classList.add("hiddenDropdown");
-      companyNavDropdown.classList.add("hiddenDropdown");
-      features.classList.remove("featuresPadding");
-      company.classList.remove("companyPadding");
-      secondPartNav.classList.remove("featuresSecondPartNavPadding", "companySecondPartNavPadding", "featuresVsCompanyPadding");
-      featuresArrow.classList.remove("arrowUp");
-      companyArrow.classList.remove("arrowUp");
-    }
+    handleResize(featuresNavDropdown, companyNavDropdown, features, company, secondPartNav, featuresArrow, companyArrow);
   });
 });
