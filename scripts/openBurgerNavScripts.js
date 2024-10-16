@@ -5,18 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const greyBackground = document.querySelector('.navGreyBackground');
     const body = document.querySelector('body');
 
-    closeImg.addEventListener('click', function() {
-        nav.classList.toggle('hidden');
+    const toggleNav = () => {
+        if (nav.classList.contains('hidden')) {
+            nav.classList.remove('hidden');
+            nav.classList.remove('slideOut');
+            nav.classList.add('slideIn');
+        } else {
+            nav.classList.remove('slideIn');
+            nav.classList.add('slideOut');
+            setTimeout(() => {
+                nav.classList.add('hidden');
+            }, 500);
+        }
         burger.classList.toggle('hidden');
         greyBackground.classList.toggle('greyBackground');
-        body.classList.remove('noScroll');
-    });
-    
-    const burgerImg = document.querySelector('.burgerImg');
-    burgerImg.addEventListener('click', function() {
-        nav.classList.toggle('hidden');
-        burger.classList.toggle('hidden');
-        greyBackground.classList.toggle('greyBackground')
-        body.classList.add('noScroll');
-    });
+        body.classList.toggle('noScroll');
+    };
+
+    closeImg.addEventListener('click', toggleNav);
+    burger.addEventListener('click', toggleNav);
 });
