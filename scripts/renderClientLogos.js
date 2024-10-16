@@ -1,5 +1,6 @@
 import { clientLogoDatas } from '../datas/clientLogoDatas.js';
 
+export const renderClientLogos = () => {
 document.addEventListener('DOMContentLoaded', () => {
     const clientLogosContainer = document.querySelector('.clientLogos');
 
@@ -14,4 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('clientLogos container not found or data is not an array.');
     }
-});
+}); }
