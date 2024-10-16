@@ -10,5 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       aElement.href = link;
       companyDropdownContainer.appendChild(aElement);
     });
+  } else {
+    console.error('companyDropdown container not found or data is not an array.');
   }
 });

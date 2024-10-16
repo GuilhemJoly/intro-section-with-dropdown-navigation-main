@@ -11,5 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imgElement.alt = alt || '';
             clientLogosContainer.appendChild(imgElement);
         });
+    } else {
+        console.error('clientLogos container not found or data is not an array.');
     }
 });

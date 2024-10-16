@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
       featuresDropdownContainer.appendChild(divElement);
     });
   } else {
-    console.error('Le conteneur #featuresDropdown est introuvable ou les données ne sont pas un tableau.');
+    console.error('featuresDropdown container not found or data is not an array.');
   }
 });
