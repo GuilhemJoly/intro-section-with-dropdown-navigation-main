@@ -1,6 +1,13 @@
-import { updatePadding } from './updatePadding.js';
+import { updatePadding } from "./updatePadding.js";
 
-export const handleCompanyClick = (event, companyNavDropdown, company, companyArrow, secondPartNav, featuresNavDropdown) => {
+export const handleCompanyClick = (
+  event,
+  companyNavDropdown,
+  company,
+  companyArrow,
+  secondPartNav,
+  featuresNavDropdown
+) => {
   if (window.innerWidth < 1025) {
     event.stopPropagation();
   }
