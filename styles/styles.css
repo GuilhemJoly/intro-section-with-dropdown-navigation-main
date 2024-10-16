@@ -690,9 +690,9 @@ footer {
     object-fit: cover;
   }
   button {
-    width: 36%;
-    padding: 4vw;
-    font-size: 4vw;
+    width: 37%;
+    padding: 3.9vw 5vw;
+    font-size: 4.4vw;
     border-radius: 15px;
   }
   .clientLogos {
