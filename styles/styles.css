@@ -99,7 +99,7 @@ nav {
   display: none;
 }
 .navArrow {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 }
 .arrowUp {
   content: url('../images/icon-arrow-up.svg');
