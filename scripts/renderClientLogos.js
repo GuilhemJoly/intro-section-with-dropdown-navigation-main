@@ -1,18 +1,14 @@
 import { clientLogoDatas } from '../datas/clientLogoDatas.js';
 
-export const renderClientLogos = () => {
-document.addEventListener('DOMContentLoaded', () => {
-    const clientLogosContainer = document.querySelector('.clientLogos');
-
-    if (clientLogosContainer && Array.isArray(clientLogoDatas)) {
-        clientLogoDatas.forEach(({ class: className, imgSrc, alt }) => {
-            const imgElement = document.createElement('img');
-            imgElement.className = className || '';
-            imgElement.src = imgSrc;
-            imgElement.alt = alt || '';
-            clientLogosContainer.appendChild(imgElement);
-        });
-    } else {
-        console.error('clientLogos container not found or data is not an array.');
-    }
-}); }
+export const renderClientLogos = (container) => {
+  const clientLogosContainer = document.createElement('div');
+  clientLogosContainer.className = 'clientLogos';
+  clientLogoDatas.forEach(logoData => {
+    const imgElement = document.createElement('img');
+    imgElement.className = logoData.class;
+    imgElement.src = logoData.imgSrc;
+    imgElement.alt = logoData.alt;
+    clientLogosContainer.appendChild(imgElement);
+  });
+  container.appendChild(clientLogosContainer);
+};
