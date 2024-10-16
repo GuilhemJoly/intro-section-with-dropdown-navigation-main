@@ -81,6 +81,7 @@ nav {
     8.3px 13.6px 69px rgba(0, 0, 0, 0.06),
     15.5px 25.5px 129.1px rgba(0, 0, 0, 0.072),
     37px 61px 309px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s forwards;
 }
 #featuresDropdown {
   left: 5.3rem;
@@ -754,5 +755,16 @@ footer {
   to {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
