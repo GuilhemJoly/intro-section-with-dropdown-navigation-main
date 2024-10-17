@@ -20,6 +20,7 @@ a {
 a:hover {
   cursor: pointer;
   color: var(--v-black);
+  font-weight: 500;
 }
 header {
   width: 100%;
@@ -106,15 +107,19 @@ nav {
   content: url('../images/icon-arrow-up.svg');
 }
 .registerButton {
-  border: 1px solid var(--v-gray);
-  padding: 0.8rem 1.4rem;
+  border: 2px solid var(--v-gray-secondary);
+  padding: 0.8rem 1.3rem;
   border-radius: 14px;
 }
 .registerButton:hover {
   cursor: pointer;
-  border: 1px solid var(--v-black);
+  border: 2px solid var(--v-black-secondary);
   background-color: var(--v-white);
   color: var(--v-black);
+}
+.registerButton:hover a {
+  color: var(--v-black);
+  font-weight: 500;
 }
 .closeImgContainer {
   display: none;
@@ -125,17 +130,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 91%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .card {
   width: 40rem;
-  height: 92%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 8vw 0 0 4.5vw;
-  margin-bottom: 2vw;
+  padding: 4vw 0 0 4.5vw;
+  margin-bottom: 0vw;
 }
 h1 {
   font-size: 5.6vw;
@@ -191,7 +196,7 @@ button:hover {
   padding-bottom: 5vw;
 }
 .imgHero {
-  width: 35vw;
+  width: 33.2vw;
 }
 footer {
   width: 100%;
