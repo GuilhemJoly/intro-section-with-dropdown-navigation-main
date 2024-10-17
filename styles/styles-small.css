@@ -1,0 +1,301 @@
+@media (max-width: 768px) {
+    body {
+      height: auto;
+      min-height: 100vh;
+      gap: 2vw;
+    }
+    header {
+      height: 4rem;
+      margin-bottom: 0;
+    }
+    .logoSection {
+      margin-top: 0;
+    }
+    .logo {
+      width: 5rem;
+      height: 3.5rem;
+      object-fit: scale-down;
+    }
+    nav {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      margin-top: 0;
+    }
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .firstPartNav {
+      flex-direction: column;
+      align-items: start;
+      gap: 1.5rem;
+      position: absolute;
+      top: 4rem;
+      left: 0.5rem;
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+    }
+    .featuresPadding {
+      padding-bottom: 12rem;
+    }
+    .companyPadding {
+      padding-bottom: 8rem;
+    }
+    #companyDropdown {
+      left: 1.5rem;
+      top: 5rem;
+    }
+    .closeImgContainer {
+      display: flex;
+      justify-content: end;
+      width: 90%;
+      height: 4rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    .closeImg {
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem;
+      z-index: 10;
+    }
+    .burgerImg {
+      display: inherit;
+      width: 2rem;
+      height: 1.2rem;
+      margin: 1.5rem 1.5rem 1rem 1rem;
+      z-index: 10;
+    }
+    .secondPartNav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      gap: 1rem;
+      top: 18rem;
+      right: 0;
+      height: fit-content;
+      width: 100%;
+      margin: 0;
+      padding: 1rem 0;
+      font-size: 1.2rem;
+    }
+    .featuresSecondPartNavPadding {
+      padding-top: 12rem;
+    }
+    .companySecondPartNavPadding {
+      padding-top: 8rem;
+    }
+    .featuresVsCompanyPadding {
+      padding-top: 24rem;
+    }
+    .moveCompanyToBottom {
+      margin-top: 12rem;
+    }
+    .registerButton {
+      width: 60%;
+      text-align: center;
+      padding: 0.8rem 1.4rem;
+      border-radius: 15px;
+      border: 2px solid var(--v-gray);
+    }
+    .container {
+      margin-top: 2rem;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: auto;
+    }
+    .pageImg {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    .imgHero {
+      content: url("../images/image-hero-mobile.png");
+      width: 100vw;
+      height: auto;
+      object-fit: cover;
+    }
+    .card {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    h1 {
+      flex-direction: row;
+      font-size: 9.2vw;
+    }
+    .makeWordSpace {
+      margin-right: 1.5vw;
+    }
+    .commercialText {
+      text-align: center;
+      width: 80%;
+      height: fit;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: 0.4rem;
+      margin-bottom: 1.7rem;
+    }
+    button {
+      width: 10rem;
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 15px;
+    }
+    .clientLogos {
+      width: 88%;
+      height: 2rem;
+      margin-top: 2.8rem;
+    }
+    .clientLogoSize {
+      width: 18vw;
+      height: 5vw;
+      object-fit: scale-down;
+    }
+    footer {
+      margin-top: 4rem;
+      width: 100%;
+      height: 10rem;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+    .attribution {
+      height: 3rem;
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  @media (max-width: 391px) {
+    body {
+      height: 84vh;
+    }
+    header {
+      height: 6rem;
+      margin-bottom: 0.5rem;
+    }
+    .logoSection {
+      height: 3.8rem;
+    }
+    .logo {
+      padding: 0.5rem 0;
+      width: 6rem;
+      object-fit: scale-down;
+    }
+    h1 {
+      font-size: 9.5vw;
+    }
+    .closeImg {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+    .burgerImg {
+      width: 2.2rem;
+      height: 1.2rem;
+      margin-right: 1.1rem;
+    }
+    .fixed-nav {
+      width: 64%;
+    }
+    .firstPartNav {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      top: 4rem;
+    }
+    .featuresNavDropdown,
+    .companyNavDropdown {
+      font-size: 1rem;
+    }
+    .featuresPadding {
+      padding-bottom: 12rem;
+    }
+    .companyPadding {
+      padding-bottom: 8rem;
+    }
+    #companyDropdown {
+      left: 1.5rem;
+      top: 5rem;
+    }
+    .secondPartNav {
+      font-size: 0.9rem;
+      top: 16.5rem;
+    }
+    .featuresSecondPartNavPadding {
+      padding-top: 12rem;
+    }
+    .companySecondPartNavPadding {
+      padding-top: 8rem;
+    }
+    .featuresVsCompanyPadding {
+      padding-top: 20rem;
+    }
+    .registerButton {
+      padding: 0.8rem 1.4rem;
+      border-radius: 15px;
+      border: 2px solid var(--v-gray);
+    }
+    .container {
+      height: 100%;
+      margin-top: 0rem;
+    }
+    .commercialText {
+      width: 90%;
+    }
+    .imgHero {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+    button {
+      width: 37%;
+      padding: 3.9vw 5vw;
+      font-size: 4.3vw;
+      border-radius: 15px;
+    }
+    .clientLogos {
+      width: 97%;
+      height: 10vw;
+    }
+    .clientLogoSize {
+      margin: auto;
+    }
+    .databizLogo {
+      width: 22vw;
+      height: 7.5vw;
+    }
+    .audiophileLogo {
+      width: 21vw;
+      height: 7vw;
+    }
+    .makerLogo,
+    .meetLogo {
+      width: 17.5vw;
+      height: 4.8vw;
+    }
+    .attribution {
+      font-size: 0.5rem;
+    }
+  }
+  
