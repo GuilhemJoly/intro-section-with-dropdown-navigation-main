@@ -1,6 +1,7 @@
 @media (max-width: 1024px) {
     body {
       height: 110vh;
+      min-height: 88vw;
       gap: 4vw;
     }
     .greyBackground {
