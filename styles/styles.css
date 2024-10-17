@@ -20,6 +20,7 @@ a {
 a:hover {
   cursor: pointer;
   color: var(--v-black);
+  font-weight: 500;
 }
 header {
   width: 100%;
@@ -112,9 +113,13 @@ nav {
 }
 .registerButton:hover {
   cursor: pointer;
-  border: 1px solid var(--v-black);
+  border: 2px solid var(--v-black-secondary);
   background-color: var(--v-white);
   color: var(--v-black);
+}
+.registerButton:hover a {
+  color: var(--v-black);
+  font-weight: 500;
 }
 .closeImgContainer {
   display: none;
