@@ -1,5 +1,7 @@
 :root {
     --v-white: hsl(0, 0%, 98%);
     --v-gray: hsl(0, 0%, 41%);
+    --v-gray-secondary: hsl(0, 0%, 52%);
     --v-black: hsl(0, 0%, 8%);
+    --v-black-secondary: hsl(0, 0%, 30%);
 }
