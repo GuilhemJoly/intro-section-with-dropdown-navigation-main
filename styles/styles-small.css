@@ -130,26 +130,10 @@
     .companyNavDropdown {
       font-size: 1rem;
     }
-    .featuresPadding {
-      padding-bottom: 12rem;
-    }
-    .companyPadding {
-      padding-bottom: 8rem;
-    }
-    #companyDropdown {
-      left: 1.5rem;
-      top: 5rem;
-    }
     .secondPartNav {
       font-size: 0.9rem;
       top: 16.5rem;
-    }
-    .featuresSecondPartNavPadding {
-      padding-top: 12rem;
-    }
-    .companySecondPartNavPadding {
-      padding-top: 8rem;
-    }
+    } */
     .featuresVsCompanyPadding {
       padding-top: 20rem;
     }
