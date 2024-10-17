@@ -88,6 +88,10 @@
       margin-top: 0.4rem;
       margin-bottom: 1.7rem;
     }
+    .button {
+      height: 3rem;
+      width: 8rem;
+    }
     .clientLogos {
       width: 88%;
       margin-top: 2.8rem;
@@ -157,6 +161,7 @@
     }
     button {
       width: 37%;
+      height: 13vw;
       padding: 3.9vw 5vw;
       font-size: 4.3vw;
       border-radius: 15px;
