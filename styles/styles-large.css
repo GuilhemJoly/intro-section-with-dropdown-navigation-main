@@ -156,6 +156,7 @@ body {
     margin: 0;
   }
   button {
+    height: 4vw;
     border: none;
     padding: 1.3vw 2.2vw;
     border-radius: 1.2vw;
