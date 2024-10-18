@@ -64,7 +64,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12rem;
+    width: 11.5rem;
     height: 100%;
     margin-right: 2.5rem;
     margin-top: 0;
@@ -114,7 +114,7 @@ body {
   .registerButton {
     border: 2px solid var(--v-gray-secondary);
     padding: 0.75rem 1.3rem;
-    border-radius: 14px;
+    border-radius: 13.5px;
   }
   .registerButton:hover {
     cursor: pointer;
