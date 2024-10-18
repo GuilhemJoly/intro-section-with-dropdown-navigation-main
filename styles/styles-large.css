@@ -188,14 +188,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 35vw;
+    width: 34.2vw;
     height: 13vw;
     margin: 2vw 0 0 0;
   }
   .clientLogoSize {
+    object-fit: scale-down;
+  }
+  .databizLogo {
+    width: 8.5vw;
+    height: 3vw;
+  }
+  .audiophileLogo {
     width: 7vw;
     height: 2.5vw;
-    object-fit: scale-down;
+  }
+  .makerLogo,
+  .meetLogo {
+    width: 7vw;
+    height: 2.5vw;
   }
   .pageImg {
     width: 40rem;
@@ -226,7 +237,7 @@ body {
   .hiddenDropdown {
     display: none;
   }
-
+  
   @media (min-width: 1600px)  {
     .card {
       padding: 4vw 0 0 5vw;
