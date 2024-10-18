@@ -31,8 +31,8 @@ Users should be able to:
 
 Desktop 1440x900px : 
 
-![](design/finished-design/MacBook%20Pro-1729161137717.jpeg)
-![](design/finished-design/MacBook%20Pro-1729161214068.jpeg)
+![](design/finished-design/desktop-1440x900.jpeg)
+![](design/finished-design/desktop-1440x900_dropdown_open.jpeg)
 
 Mobile 375x780px :
 
