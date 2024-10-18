@@ -153,6 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 5.6vw;
+    margin-bottom: 3vw;
   }
   span {
     margin: 0;
@@ -180,6 +181,7 @@ body {
     margin-bottom: 3.2vw;
     width: 77%;
     line-height: 2vw;
+    font-size: 1.13rem;
   }
   .clientLogos {
     display: flex;
